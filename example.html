@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Load error_handler.js script before other scripts -->
+    <script src="js/error_handler.js"></script>
+
+    <!-- Load required PyScript packages -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"onerror=scriptLoadFailure('pyscr ipt.js')></script>
+
+    <link rel="stylesheet" href="css/table.css" />
+
+    <!-- Load required Python packages -->
+    <py-env>
+    - paths:
+      - error_handler.py
+      - jhanley_html.py
+    </py-env>
+  </head>
+
+  <body>
+    <!-- Load the Python main application file -->
+    <py-script src="example.py"></py-script>
+  </body>
+</html>
